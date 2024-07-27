@@ -1,0 +1,198 @@
+/* Genel Stil Ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Yazı Tipi İtalik */
+em {
+    font-style: italic;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Home Bölümü */
+section#home {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('C:\Users\sudet\OneDrive\Masaüstü\foto.png') no-repeat center center/cover;
+    color: #080048;
+}
+
+section#home h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+}
+
+section#home p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Fiyat Paketleri */
+section#prices {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.price-package {
+    display: inline-block;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 15px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    max-width: 320px;
+    vertical-align: top;
+}
+
+.price-package h3 {
+    margin-top: 0;
+    font-size: 2em;
+    font-style: italic;
+    color: #003366;
+}
+
+.price-package p {
+    font-size: 1.3em;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.price-package ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.price-package ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.price-package ul li:last-child {
+    border-bottom: none;
+}
+
+/* Haklarımız Saklıdır Kısmı */
+.disclaimer {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    max-width: 500px;
+}
+
+.disclaimer .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #003366;
+}
+
+/* Sosyal Medya Hesapları */
+.social-media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-media p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.social-media .social-icon {
+    display: inline-block;
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-media .social-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.social-media .social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.social-media a {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Medya Sorguları */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section#home {
+        padding: 40px 10px;
+    }
+
+    .price-package {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .disclaimer {
+        margin: 10px;
+    }
+}
